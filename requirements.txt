@@ -1,0 +1,24 @@
+dash>=2.17
+dash-bootstrap-components>=1.6
+plotly>=5.22
+pandas>=2.2
+numpy>=1.26
+yfinance>=0.2.40
+feedparser>=6.0
+requests>=2.32
+beautifulsoup4>=4.12
+Pillow>=10.3
+pytz
+python-dateutil
+kaleido==0.2.1
+reportlab>=4.2
+xlrd>=2.0
+
+# Market-sentiment pipeline (NG-focused) ─────────────────────────────────────
+transformers>=4.40.0
+torch>=2.0.0
+praw>=7.7.0
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+APScheduler>=3.10.0
+python-dotenv>=1.0.0

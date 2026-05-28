@@ -1,0 +1,131 @@
+/* Dashboard dark theme overrides */
+html, body {
+    background-color: #0d0d0d !important;
+    color: #ffffff !important;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.dashboard-container {
+    padding-top: 70px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* Navbar */
+.ng-navbar {
+    background-color: #111111 !important;
+    border-bottom: 1px solid #2a2a2a;
+    height: 56px;
+    z-index: 1050;
+}
+
+.ng-navbar .navbar-brand {
+    color: #ffffff !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-cell {
+    padding: 0 12px;
+    border-left: 1px solid #2a2a2a;
+    line-height: 1.1;
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.nav-cell .nav-cell-title {
+    font-size: 10px;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-cell .nav-cell-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.nav-price-big {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.sentiment-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px currentColor;
+}
+
+/* Flashing alert keyframes */
+@keyframes flash-green {
+    0%, 100% { background-color: #003300; }
+    50%      { background-color: #00ff88; color: #000; }
+}
+
+@keyframes flash-red {
+    0%, 100% { background-color: #330000; }
+    50%      { background-color: #ff3333; color: #000; }
+}
+
+.flash-green { animation: flash-green 2s infinite; }
+.flash-red   { animation: flash-red 2s infinite; }
+
+/* Tabs */
+.nav-tabs {
+    border-bottom: 1px solid #2a2a2a;
+    background-color: #111111;
+}
+
+.nav-tabs .nav-link {
+    color: #cccccc;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+.nav-tabs .nav-link.active {
+    color: #00ff88 !important;
+    background-color: #1a1a1a !important;
+    border-color: #2a2a2a;
+    border-bottom-color: #1a1a1a;
+}
+
+/* Cards */
+.metric-card {
+    background-color: #1a1a1a !important;
+    border: 1px solid #2a2a2a !important;
+    color: #ffffff !important;
+}
+
+.metric-card .metric-title {
+    font-size: 12px;
+    color: #888888;
+    text-transform: uppercase;
+}
+
+.metric-card .metric-value {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* DataTable overrides */
+.dash-table-container {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+/* Modal */
+.modal-content {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+    border: 1px solid #2a2a2a !important;
+}
+
+/* Hide plotly modebar by default */
+.modebar { display: none !important; }
